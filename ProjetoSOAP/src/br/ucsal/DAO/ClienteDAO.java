@@ -9,10 +9,10 @@ public class ClienteDAO {
 
 	static List<Cliente> lista = new ArrayList<>();
 	
-	public List<Cliente> listar() {
+	public Cliente listar() {
 		
 		lista.add(new Cliente(1, "Rodrigo"));
 		lista.add(new Cliente(2, "Rafael"));
-		return lista;
+		return lista.get(0);
 	}
 }
